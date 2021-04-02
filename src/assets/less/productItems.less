@@ -1,0 +1,121 @@
+@fontLowColor:#cda462;
+@fontDeepColor:#535353;
+@deepBtnColor:#C7A76D;
+@lowBtnColor:#ecce96;
+@smallFontColor:#909da2;
+@bigFontColor:#535353;
+.productItems{
+    width: 90vw;
+    box-sizing: border-box;
+    margin:0px auto 20px;
+    background-color: #fff;
+    padding:10px 0px 10px 20px;
+    .shopMsg{
+        font-size: 18px;
+        color:@bigFontColor;
+        margin-bottom: 10px;
+    }
+    .item-box{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:20px;
+        .pic{
+            width: 100px;
+            height: 100px;
+            margin-right:10px;
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .info{
+            height: 100%;
+            width:calc(100% - 100px - 20px);
+            // margin:10px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: space-between;
+            .name{
+                width: 100%;
+                text-align: left;
+                font-size: 16px;
+                color:@bigFontColor;
+                margin-bottom:2px;
+            }
+            .enname{
+                margin-bottom:2px;
+                width: 100%;
+                color:@smallFontColor;
+                font-size: 16px;
+                text-align: left;
+            }
+            .select{
+                margin-bottom:2px;
+                width: 100%;
+                color:@smallFontColor;
+                font-size: 16px;
+                text-align: left;
+            }
+            .priceNum{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .price{
+                    color:red;
+                    font-size: 14px;
+                    span{
+                        font-size:20px;
+                    }
+                }
+                .numbers{
+                    width: 30px;
+                    margin-right:20px;
+                    text-align: center;
+                    font-size: 16px;
+                    color:@bigFontColor;
+                }
+            }
+        }
+    }
+    .orderInfo{
+        border-top:1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top:15px;
+        .numTime{
+            .times{
+                font-size: 16px;
+                color:@smallFontColor;
+                margin-bottom:5px;
+            }
+            .count{
+                font-size: 16px;
+                color:@smallFontColor;
+                span{
+                    font-size: 18px;
+                    color:#000;
+                }
+            }
+
+        }
+        .price{
+            align-self: flex-end;
+            margin-right:10px;
+            color:red;
+            font-size: 14px;
+            span.total{
+                color:@bigFontColor;
+                font-size: 18px;
+            }
+            span.money{
+                font-size: 18px;
+            }
+        }
+
+    }
+}

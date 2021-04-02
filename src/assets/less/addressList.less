@@ -1,0 +1,37 @@
+@fontLowColor:#cda462;
+@fontDeepColor:#535353;
+@deepBtnColor:#C7A76D;
+@lowBtnColor:#ecce96;
+.addressList{
+    .topNav{
+        /deep/ .van-icon {
+            color:@fontLowColor;
+        }
+        /deep/ .van-nav-bar__text{
+            color:@fontLowColor;
+        }
+        /deep/ .van-nav-bar__title{
+            font-size: 20px;
+            color:@fontDeepColor;
+            font-weight: bold;
+        }
+    }
+    .background{
+        .content{
+            /deep/ .van-tag--danger{
+                background:@deepBtnColor;
+            }
+            /deep/ .van-tag{
+                font-size: 16px;
+            }
+            /deep/ .van-button--danger{
+                background:@deepBtnColor;
+                border-color: @deepBtnColor;
+            }
+            /deep/ .van-address-item .van-radio__icon--checked .van-icon{
+                background:@deepBtnColor;
+                border-color: @deepBtnColor;
+            }
+        }
+    }
+}

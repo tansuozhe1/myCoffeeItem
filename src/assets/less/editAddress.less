@@ -1,0 +1,34 @@
+@deepBtnColor:#C7A76D;
+@lowBtnColor:#ecce96;
+@fontLowColor:#cda462;
+@fontDeepColor:#535353;
+
+.editAdress{
+    .topNav{
+        /deep/ .van-icon {
+            color:@fontLowColor;
+        }
+        /deep/ .van-nav-bar__text{
+            color:@fontLowColor;
+        }
+        /deep/ .van-nav-bar__title{
+            font-size: 20px;
+            color:@fontDeepColor;
+            font-weight: bold;
+        }
+    }
+
+    .background{
+        .content{
+            /deep/ .van-button--danger{
+                background:@deepBtnColor;
+                border-color: @deepBtnColor;
+            }
+            /deep/ .van-button--default{
+                background:@lowBtnColor;
+                border-color: @lowBtnColor;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@fontLowColor:#cda462;
+@fontDeepColor:#535353;
+@deepBtnColor:#C7A76D;
+@lowBtnColor:#ecce96;
+@smallFontColor:#909da2;
+@bigFontColor:#535353;
+.mine{
+    width: 100vw;
+    .bakcgroundImg{
+        width: 100%;
+        height: 200px;
+        /deep/ .van-uploader__upload{
+            width: 100vw;
+            height:200px;
+            position:fixed;
+            left:0px;
+            top:0px;
+            opacity: 0;
+        }
+        img{
+            display:block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    //列表盒子
+    .item-box{
+        width:90%;
+        margin:0px auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden;
+        position:relative;
+        top:-50px;
+        background-image: linear-gradient(to bottom,rgba(255,255,255,.6) 0px,rgba(255,255,255,.6) 50px,#fff 50px);
+        //头部信息：头像以及个性签名
+        .introduce{
+            display: flex;
+            justify-content: space-between;
+            .img-box{
+                width: 88px;
+                height: 88px;
+                border-radius:50%;
+                overflow:hidden;
+                margin:10px 20px 10px 10px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+                .fileLoader{
+                    /deep/ .van-uploader__upload{
+                        width: 88px;
+                        height: 88px;
+                        position: relative;
+                        top:-88px;
+                        opacity: 0;
+                    }
+
+                }
+            }
+            .descInfo{
+                flex:1;
+                .name{
+                    font-size: 20px;
+                    color:#000;
+                    margin-top:10px;
+                    margin-bottom:15px;
+                }
+                .msg{
+                    font-size: 16px;
+                    color:@bigFontColor;
+                    margin-right:10px;
+                }
+            }
+        }
+
+
+        // 未登录显示的头像
+        .unLogin{
+            display: flex;
+            justify-content: space-between;
+            .img-box{
+                width: 88px;
+                height: 88px;
+                border-radius:50%;
+                overflow:hidden;
+                margin:10px 20px 10px 10px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+            .descInfo{
+                flex:1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top:10px;
+                font-size: 20px;
+                color:@smallFontColor;
+                span{
+                    color:@fontLowColor;
+                }
+                /deep/ .van-icon-arrow::before{
+                    margin-right:15px;
+                }
+            }
+        }
+
+        //列表
+        .itemList{
+            margin-top:20px;
+        }
+    }
+}

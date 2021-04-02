@@ -1,0 +1,197 @@
+    @fontLowColor:#cda462;
+    @fontDeepColor:#535353;
+    @smallFontColor:#909da2;
+    @deepBtnColor:#C7A76D;
+    @lowBtnColor:#ecce96;
+.shopbag{
+    //顶部导航栏
+    .topNav{
+        /deep/ .van-nav-bar__content{
+            border-bottom:1px solid #ccc;
+        }
+        /deep/ .van-icon {
+            color:@fontLowColor;
+        }
+    
+        /deep/ .van-nav-bar__text{
+            color:@fontLowColor;
+        }
+        /deep/ .van-nav-bar__title{
+            font-size: 20px;
+            color:@fontDeepColor;
+            font-weight: bold;
+        }
+
+    }
+
+    // 结算列表
+    .settlementList{
+        position:fixed;
+        left:0px;
+        bottom:50px;
+        width: 100%;
+        height: 50px !important;
+        z-index: 99;
+        /deep/ .van-submit-bar{
+            position:static;
+        }
+        /deep/ .van-checkbox__icon--checked .van-icon{
+            background-color:@fontLowColor ;
+            border-color:@fontLowColor;
+        }
+    
+        /deep/ .van-submit-bar__text{
+            text-align: center;
+            font-size: 20px;
+            color:@fontDeepColor;
+            font-weight: bold;
+        }
+    
+        /deep/ .van-submit-bar__price--integer{
+            font-size: 24px !important;
+        }
+        /deep/ .van-submit-bar__price{
+            font-size: 16px;
+        }
+        /deep/ .van-submit-bar__button--danger{
+            background: -webkit-linear-gradient(to right,#e9bb67,#fa9b02);
+            background: linear-gradient(to right,#e9bb67,#fa9b02);
+        }
+        /deep/ .van-submit-bar__button{
+            font-size: 16px;
+        }
+
+    }
+
+    // 删除列表
+    .removeList{
+        position:fixed;
+        left:0px;
+        bottom:50px;
+        width: 100%;
+        /deep/ .van-submit-bar__bar{
+            justify-content: space-between;
+        }
+        /deep/ .van-submit-bar{
+            position:static;
+        }
+        /deep/ .van-checkbox__icon--checked .van-icon{
+            background-color:@fontLowColor ;
+            border-color:@fontLowColor;
+        }
+        /deep/ .van-submit-bar__button--danger{
+            background: -webkit-linear-gradient(to right,#e9bb67,#fa9b02);
+            background: linear-gradient(to right,#e9bb67,#fa9b02);
+        }
+        /deep/ .van-submit-bar__button{
+            font-size: 16px;
+        }
+    }
+
+    // 购物袋商品列表
+    .shopbagItems{
+        background:#fff;
+        margin-top:10px;
+        .customBox{
+            height:100px;
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            .checkBox{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /deep/ .van-checkbox__icon--checked .van-icon{
+                    background-color:@fontLowColor ;
+                    border-color:@fontLowColor;
+                }
+            }
+            .picBox{
+                width: 88px;
+                height: 88px;
+                img{
+                    display:block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .contentBox{
+                box-sizing: border-box;
+                padding-left: 10px;
+                height: 100%;
+                flex:1;
+                ul{
+                    list-style: none;
+                    li{
+                        margin:2px 0px 0px 0px;
+                        &:first-of-type{
+                            font-size: 16px;
+                            color:@fontDeepColor;
+                            font-weight: bold;
+                            
+                        }
+                        &:nth-of-type(2){
+                            font-size: 14px;
+                            color:@smallFontColor;
+                        }
+                        &:nth-of-type(3){
+                            font-size: 14px;
+                            color:@smallFontColor;
+                        }
+                        &:last-of-type{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items:flex-start;
+                            .priceBox{
+                                width: 50px;
+                                .bigSpan{
+                                    color:red;
+                                    font-size: 14px;
+                                    .price{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                            .addMinuBox{
+                                /deep/ .van-stepper{
+                                    margin-right:20px;
+                                }
+                                /deep/ .van-stepper--round .van-stepper__plus{
+                                    background:#c7a76d;
+                                }
+                                /deep/ .van-stepper--round .van-stepper__minus{
+                                    color:#f5a207;
+                                    border-color:#faa403;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /deep/ .van-swipe-cell__right{
+            width: 80px;
+            display: flex;
+            align-items: center;
+        }
+        /deep/ .van-button--default{
+            background:@deepBtnColor;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            font-size: 24px;
+            color:white;
+        }
+    }
+    .tips{
+        margin-top:20px;
+        margin-bottom: 120px;
+        font-size: 16px;
+        color:@fontLowColor;
+        display: flex;
+        justify-content: center;
+    }
+}

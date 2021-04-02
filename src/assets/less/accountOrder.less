@@ -1,0 +1,73 @@
+@fontLowColor:#cda462;
+@fontDeepColor:#535353;
+@deepBtnColor:#C7A76D;
+@lowBtnColor:#ecce96;
+@smallFontColor:#909da2;
+.accountOrder{
+    .myOrder{
+        /deep/ .van-icon {
+            color:@fontLowColor;
+        }
+        /deep/ .van-nav-bar__text{
+            color:@fontLowColor;
+        }
+        /deep/ .van-nav-bar__title{
+            font-size: 20px;
+            color:@fontDeepColor;
+            font-weight: bold;
+        }
+    }
+    /deep/ .van-nav-bar .van-icon, /deep/ .van-nav-bar__text{
+        color:#cda462;
+      }
+    
+      .bg-content{
+        background-color: transparent !important;
+        padding: 0 !important;
+      }
+    
+      /deep/ .van-tabs--line .van-tabs__wrap{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    
+      /deep/ .van-tabs__content{
+        margin-top: 10px;
+      }
+    
+      .pay-title-box{
+        display: flex;
+      }
+    
+      .pay-t{
+        color: #666;
+        font-size: 14px;
+        margin-right: auto;
+      }
+    
+      .pay-s{
+        display: flex;
+      }
+    
+      .pay-text{
+        font-size: 14px;
+        color: #999;
+      }
+    
+      .pay-icon{
+        width: 19px;
+        height: 19px;
+        font-size: 19px;
+        color: #999;
+        margin-left: 10px;
+      }
+    
+      .tab-box{
+        background-color: #fff;
+        padding: 10px;
+        margin-bottom: 10px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+}
